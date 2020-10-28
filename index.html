@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comohos Store</title>
+    <link rel="icon" href="assets/img/logo.png">
+    <script src="https://kit.fontawesome.com/28a36ea143.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <div class="app">
+        <nav class="top">
+            <div class="container">
+                <div class="nav">
+                    <div class="nav__contact">
+                        <a href="#" class="nav__contact-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>
+                                HOTLINE: 111-111-1111
+                            </span>
+                        </a>
+                    </div>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__item-link">
+                                <span>
+                                    <i class="fas fa-heart"></i>
+                                    WISH LIST (0)
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__item-button" id="my-account">
+                                <span>
+                                    <i class="fas fa-user-alt"></i>
+                                    MY ACCOUNT
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu" id="dropdown-my-account">
+                                <li class="dropdown-menu__item">
+                                    <a href="#" class="dropdown-menu__link">
+                                        <span>REGISTER</span>
+                                        <i class="fas fa-unlock"></i>
+                                    </a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a href="#" class="dropdown-menu__link">
+                                        <span>LOGIN</span>
+                                        <i class="fas fa-user-alt"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <button class="nav__item-button" id="my-account2">
+                                <strong>$</strong>
+                                <span>
+                                    USD
+                                </span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu" id="dropdown-my-account2">
+                                <li class="dropdown-menu__item">
+                                    <a href="#" class="dropdown-menu__link">
+                                        <span>EURO</span>
+                                        <span>€</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a href="#" class="dropdown-menu__link">
+                                        <span>POUND STERLING</span>
+                                        <span>£</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a href="#" class="dropdown-menu__link">
+                                        <span>US DOLLAR</span>
+                                        <span>$</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <button class="nav__item-button nav__item-button--no-pr" id="my-account3">
+                                <span><img src="assets/img/gb.png" alt=""></span>
+                                <span>
+                                    EN
+                                </span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu" id="dropdown-my-account3">
+                                <li class="dropdown-menu__item">
+                                    <a href="#" class="dropdown-menu__link">
+                                        <span>ENGLISH</span>
+                                        <span><img src="assets/img/gb.png" alt=""></span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a href="#" class="dropdown-menu__link">
+                                        <span>DEUTSCH</span>
+                                        <span><img src="assets/img/de.png" alt=""></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="container">
+                <div class="header">
+                    <a href="#" class="header__link">
+                        <img src="assets/img/logo.png" alt="" class="header__img">
+                    </a>
+                    <div class="header__search">
+                        <div class="header__search-btn">
+                            <a href="#" class="header__search-link">
+                                <span>All Categories</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" id="dropdown-menu">
+                                <li class="dropdown-menu__item">
+                                    <a href="" class="dropdown-menu__item-link">
+                                        All categories
+                                    </a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a href="" class="dropdown-menu__item-link">
+                                        Men
+                                    </a>
+                                    <ul class="dropdown-menu__submenu">
+                                        <li class="dropdown-menu__submenu-item">
+                                            <a href="#" class="dropdown-menu__submenu-item-link">
+                                                Handbags
+                                            </a>
+                                            <ul class="dropdown-menu__submenu">
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Shoulder
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Hipster
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Ladies bag
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Summer bags
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Leathers
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-menu__submenu-item">
+                                            <a href="#" class="dropdown-menu__submenu-item-link">
+                                                Shoes
+                                            </a>
+                                            <ul class="dropdown-menu__submenu">
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Sports
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Outerwear
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Pants & Shorts
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Sweatshirts
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Sock
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a href="" class="dropdown-menu__item-link">
+                                        Women
+                                    </a>
+                                    <ul class="dropdown-menu__submenu">
+                                        <li class="dropdown-menu__submenu-item">
+                                            <a href="#" class="dropdown-menu__submenu-item-link">
+                                                Shorts
+                                            </a>
+                                            <ul class="dropdown-menu__submenu">
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Dresses
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Pant
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Slips & Shapewear
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Swimwear
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Skirts
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-menu__submenu-item">
+                                            <a href="#" class="dropdown-menu__submenu-item-link">
+                                                Shoes
+                                            </a>
+                                            <ul class="dropdown-menu__submenu">
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Sports
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Outerwear
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Pants & Shorts
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Sweatshirts
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-menu__submenu-item">
+                                                    <a href="#" class="dropdown-menu__submenu-item-link">
+                                                        Sock
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__search-form">
+                            <input type="text" class="header__search-input" id="input-search"
+                                placeholder="Search here...">
+                            <button class="header__search-btn--icon">
+                                <i class="fas fa-search"></i>
+                            </button>
+
+                            <ul class="header__suggest" id="suggest-search">
+                                <li class="header__suggest-item">
+                                    <a href="#" class="header__suggest-item-link">
+                                        <img src="assets/img/sp1.jpg" alt="" class="header__suggest-img">
+                                    </a>
+                                    <a href="#" class="header__suggest-item-link">
+                                        <p>CASHMERE CUFF VINTAGE LEVI</p>
+                                        <p class="header__suggest-item-price">100.0000</p>
+                                    </a>
+                                </li>
+                                <li class="header__suggest-item">
+                                    <a href="#" class="header__suggest-item-link">
+                                        <img src="assets/img/sp2.jpg" alt="" class="header__suggest-img">
+                                    </a>
+                                    <a href="#" class="header__suggest-item-link">
+                                        <p>CASHMERE SAINT LAURENT LAVAR</p>
+                                        <p class="header__suggest-item-price">100.0000</p>
+                                    </a>
+                                </li>
+                                <li class="header__suggest-item">
+                                    <a href="#" class="header__suggest-item-link">
+                                        <img src="assets/img/sp3.jpg" alt="" class="header__suggest-img">
+                                    </a>
+                                    <a href="#" class="header__suggest-item-link">
+                                        <p>CASHMERE SAINT LAURENT SUZAN</p>
+                                        <p class="header__suggest-item-price">2000.0000</p>
+                                    </a>
+                                </li>
+                                <li class="header__suggest-item">
+                                    <a href="#" class="header__suggest-item-link">
+                                        <img src="assets/img/sp4.jpg" alt="" class="header__suggest-img">
+                                    </a>
+                                    <a href="#" class="header__suggest-item-link">
+                                        <p>FLORAL GOLD COLLAR CHUNKY</p>
+                                        <p class="header__suggest-item-price">100.0000</p>
+                                    </a>
+                                </li>
+                                <li class="header__suggest-item">
+                                    <a href="#" class="header__suggest-item-link">
+                                        <img src="assets/img/sp5.jpg" alt="" class="header__suggest-img">
+                                    </a>
+                                    <a href="#" class="header__suggest-item-link">
+                                        <p>METALLIC INDIGO CUFF SEAM BANDEAU</p>
+                                        <p class="header__suggest-item-price">500.0000</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__call-us">
+                        <div class="header__call-us-text">
+                            <p>CALL US NOW</p>
+                            <span>(84) 8 6270 6519</span>
+                        </div>
+                        <a href="#" class="header__call-us-link">
+                            <img src="assets/img/support.jpg" alt="">
+                        </a>
+                    </div>
+                    <button class="header__cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>0 item(s) - $0.00</span>
+                        <!-- <div class="header__cart-dropdown">
+                            <ul class="header__cart-dropdown-list">
+                                <li class="header__cart-dropdown-item">
+
+                                </li>
+                            </ul>
+                            <div class="header__cart-list--empty">
+                                <p>Your shopping cart is empty!</p>
+                            </div>
+                        </div> -->
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+
+</html>

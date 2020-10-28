@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #f3ad48;
+  --black-color: black;
+  --text-color: black;
+  --nav-text-color: #434343;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Lato", sans-serif;
+
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.container {
+  width: 1170px; /* display 1200px for screen larger than 1170px   */
+  max-width: 100%; /* display full width for screen smaller than 1170px */
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container-row {
+  display: flex;
+  flex-wrap: wrap;
+}
