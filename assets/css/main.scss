@@ -260,6 +260,7 @@ header {
                         padding: 8px 0;
 
                         &-link {
+                            
                             font-size: 14px;
                             color: #3b3c48;
 
@@ -355,6 +356,8 @@ header {
             align-items: center;
             justify-content: center;
 
+            position: relative;
+
             width: 145px;
             height: 40px;
             margin-left: auto;
@@ -363,8 +366,8 @@ header {
             outline: none;
 
             font-size: 1.2rem;
-
             color: white;
+
             background-color: var(--primary-color);
             transition: 0.6s;
 
@@ -375,9 +378,179 @@ header {
             &:hover {
                 background-color:white;
                 color: var(--primary-color);
+            }
+
+            &-dropdown {
+                position: absolute;
+                top: 150%;
+                right: 0;
+                width: 250%;
+
+                box-shadow: 0 0 2px black;
+                border-bottom: 3px solid var(--primary-color);
+
+                background-color: white;
+                display: none;
                 
+                &-list {
+                    margin: 0;
+                    padding: 0 0 0;
+
+                    .header__cart-dropdown-item {
+                        
+                        margin: 0 20px;
+
+                        padding: 20px 0 20px;
+
+                        border-bottom: 1px solid #eaeaea;
+
+                        .header__cart-top {
+                            display: flex;
+
+                            &-link {
+                                position: relative;
+                                
+                                img {
+                                    width: 98px;
+                                    height: 131px;
+    
+                                    object-fit: contain;
+                                }
+                                
+                                i {
+                                    position: absolute;
+                                    top: 0;
+                                    left: -8px;
+                                    font-size: 2rem;
+                                    cursor: pointer;
+                                }
+                                
+                                
+
+                                .second-icon {
+                                    color: #EF5B8F;
+                                    background-color: #fff;
+                                    &:hover{
+                                        opacity: 0;
+                                    }
+                                }
+
+                                .first-icon {
+                                    color: #EF5B8F;
+                                    background-color: #fff;
+                                }
+                            }
+
+                            &-detail {
+                                margin-left: 20px;
+
+                                .item-name {
+                                    color: #3b3c48;
+                                    font-size: 1.4rem;
+                                    text-transform: uppercase;
+                                    
+                                    padding: 12px 0 10px;
+
+                                    p{
+                                        text-align: left;
+                                    }
+
+                                    &:hover {
+                                        color: var(--primary-color);
+                                    }
+                                }
+
+                                .color-option, .size-option {
+                                    color: #666;
+                                    text-align: left;
+                                    margin: 0;
+
+                                    font-size: 1.19rem;
+                                }
+
+                                .quantity-and-price {
+                                    color: #666;
+                                    font-size: 1.5rem;
+
+                                    text-align: left;
+
+                                    span {
+                                        font-size: 2rem;
+                                        font-weight: bold;
+                                        color: #303030;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    table {
+                        margin-top: 15px;
+                        width: 100%;
+                        
+                        tr {
+                            color: #303030;
+
+                            display: flex;
+                            justify-content: space-between;
+                            
+                            .text-left {
+                                font-size:  1.4rem;
+                                font-weight: bold;
+                            }
+
+                            .text-right {
+                                font-size: 2rem; 
+                                font-weight: 700;
+                            }
+
+                            td {
+                                padding: 5px 26px 8px;
+                            }
+                        }
+                    }
+                    .header__cart-dropdown-btn {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+    
+                        padding: 16px 20px;
+    
+                        background-color: var(--primary-color);
+    
+                        a {
+                            color: white;
+                            
+                            padding: 8px 40px;
+                            border: 1px solid white;
+    
+                            &:hover {
+                                color: var(--primary-color);
+                                background-color:white;
+    
+                                transition: 0.5s;
+                            }
+                        }
+                    }
+                }
+
+
+                .header__cart-list--empty {
+                    p {
+                        font-size: 1.3rem;
+                        color:#666666;
+                        margin: 40px 0 40px;
+                    }
+                }
             }
         }
     }
 }
 
+.d-b {
+    display: block;
+}
+
+.d-n {
+    display: none;
+}
