@@ -1,6 +1,6 @@
 .app {
-    background-color: lightblue;
-    height: 600px;
+    background-color:#EF5B8F;
+    height: 100vh;
 }
 
 .top {
@@ -536,6 +536,7 @@ header {
 
 
                 .header__cart-list--empty {
+                    display: none;
                     p {
                         font-size: 1.3rem;
                         color:#666666;
@@ -547,10 +548,213 @@ header {
     }
 }
 
-.d-b {
-    display: block;
-}
+.boss_header {
+    background-color: #343434;
 
-.d-n {
-    display: none;
+    .nav-main {
+        display: flex;
+        align-items: center;
+
+        height: 50px;
+
+        .category {
+            display: flex;
+            align-items: center;
+            
+            background-color: #525252;
+            
+            height: 100%;
+            padding: 0 20px;
+
+            cursor: pointer;
+
+            position: relative;
+
+            .category-text {
+                font-size: 1.4rem;
+
+                color: white;
+                padding-right: 140px;
+            }
+
+            i {
+                font-size: 1.8rem;
+                color: white;
+            }
+
+            &-menu {
+                position: absolute;
+                top: 80%;
+                left: 0;
+
+                width: 100%;
+
+                background-color: #f8f8f8;
+                box-shadow: 0 0 1px black;
+
+                display: none;
+
+                &-item {
+                    padding: 15px;
+
+                    position: relative;
+
+                    &__link {
+                        font-size: 1.4rem;
+                        display: flex;
+                        align-items: center;
+                        
+                        img, span i {
+                            margin-right: 20px;
+                            transform: translateY(-2px);
+                        }
+
+                        p{
+                            font-size: 20px;
+                        }
+
+                        span {
+                            color: #666;
+
+                            i {
+                                font-size: 14px;
+                                padding-left: 5px;
+
+                                opacity: 0.6;
+                            }
+                        }
+
+                        i {
+                            font-size: 10px;
+                            color: #666;
+                            margin-left: auto;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: white;
+                    }
+
+                    &:hover span {
+                        color: black;
+                        font-weight: bold;
+                    }
+
+                    &:hover .category-submenu {
+                        display: block;                        
+                    }
+
+                    &:first-child .category-submenu{
+                        background-image: url(../../assets/img/bg_submenu.png);
+                        background-position: top right;
+                        background-repeat: no-repeat;
+                        width: 196%;
+                        animation: expand-width .4s;
+                    }
+
+                    &:nth-child(2) .category-submenu, &:nth-child(5) .category-submenu{
+                        width: 155%;
+                        animation: expand-width2 .4s;
+                    }
+
+                    .category-submenu {
+                        position: absolute;
+                        top: 0;
+                        left: 100%;
+
+                        padding: 20px 30px;
+                        border-bottom: 3px solid var(--primary-color);
+  
+                        background-color: white;
+
+                        animation: expand-width3 0.4s;
+
+                        display: none;
+
+                        @keyframes expand-width {
+                            from {
+                                width: 140%;
+                            }
+                            to {
+                                width: 196%;
+                            }
+                        }
+
+                        @keyframes expand-width2 {
+                            from {
+                                width: 140%;
+                            }
+                            to {
+                                width: 155%;
+                            }
+                        }
+
+                        @keyframes expand-width3 {
+                            from {
+                                width: 70%;
+                            }
+                            to {
+                                width: 79%;
+                            }
+                        }
+
+
+                        &__list {
+                            display: inline-block;
+                            .category-submenu__type {
+                                font-size: 16px;
+                                font-weight: bold;
+                                color: var(--primary-color);
+                            }
+
+                            &-item {
+                                padding-top: 10px;
+                                margin-right: 20px;
+
+                                width: 147px;
+                                
+                                &:not(:last-child) {
+                                    border-bottom: 1px solid #eaeaea;
+                                }
+                                
+                                &-link {
+                                    font-size: 14px;
+                                    color: #666;
+
+                                    &:hover {
+                                        color: var(--primary-color);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            
+            padding: 16px 26px;
+            
+            &-title {
+                font-size: 1.5rem;
+                color: white;
+                padding-right: 3px;
+            }
+            i {
+                font-size: 9px;
+                color: white;
+            }
+
+            &:hover span{
+                color: var(--primary-color);
+            }
+
+            &:hover i{
+                color: var(--primary-color);
+            }
+        }
+    }
 }

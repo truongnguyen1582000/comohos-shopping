@@ -26,13 +26,16 @@ $(document).ready(function(){
     $("#cart-btn").click(function(){
         $("#cart-list").toggle();
     })
+
+    $("#category-btn").click(function(){
+        $("#category-menu").toggle();
+    })
 });
-            
+
 $(document).mouseup(function(e) 
 {
     var container = $("#dropdown-menu, #dropdown-my-account, #dropdown-my-account2,#dropdown-my-account3, #cart-list");
 
-    // if the target of the click isn't the container nor a descendant of the container
     if (!container.is(e.target) && container.has(e.target).length === 0) 
     {
         container.hide();
