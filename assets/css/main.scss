@@ -641,7 +641,10 @@ header {
                     }
 
                     &:hover .category-submenu {
-                        display: block;                        
+                        
+                        display: block; 
+                        transition: 0.4s;
+
                     }
 
                     &:first-child .category-submenu{
@@ -649,52 +652,33 @@ header {
                         background-position: top right;
                         background-repeat: no-repeat;
                         width: 196%;
-                        animation: expand-width .4s;
                     }
 
                     &:nth-child(2) .category-submenu, &:nth-child(5) .category-submenu{
-                        width: 155%;
-                        animation: expand-width2 .4s;
+                        width: 140%;
                     }
 
                     .category-submenu {
                         position: absolute;
                         top: 0;
                         left: 100%;
+                        width:75%;
 
                         padding: 20px 30px;
                         border-bottom: 3px solid var(--primary-color);
   
                         background-color: white;
-
-                        animation: expand-width3 0.4s;
+                        transform-origin: left;
+                        animation: scale-ltr .4s;
 
                         display: none;
 
-                        @keyframes expand-width {
+                        @keyframes scale-ltr {
                             from {
-                                width: 140%;
+                                transform: scaleX(0.7);
                             }
                             to {
-                                width: 196%;
-                            }
-                        }
-
-                        @keyframes expand-width2 {
-                            from {
-                                width: 140%;
-                            }
-                            to {
-                                width: 155%;
-                            }
-                        }
-
-                        @keyframes expand-width3 {
-                            from {
-                                width: 70%;
-                            }
-                            to {
-                                width: 79%;
+                                transform: scaleX(1);
                             }
                         }
 

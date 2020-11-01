@@ -640,6 +640,8 @@ header .header__cart-dropdown .header__cart-list--empty p {
 
 .boss_header .nav-main .category-menu-item:hover .category-submenu {
   display: block;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .boss_header .nav-main .category-menu-item:first-child .category-submenu {
@@ -647,79 +649,46 @@ header .header__cart-dropdown .header__cart-list--empty p {
   background-position: top right;
   background-repeat: no-repeat;
   width: 196%;
-  -webkit-animation: expand-width .4s;
-          animation: expand-width .4s;
 }
 
 .boss_header .nav-main .category-menu-item:nth-child(2) .category-submenu, .boss_header .nav-main .category-menu-item:nth-child(5) .category-submenu {
-  width: 155%;
-  -webkit-animation: expand-width2 .4s;
-          animation: expand-width2 .4s;
+  width: 140%;
 }
 
 .boss_header .nav-main .category-menu-item .category-submenu {
   position: absolute;
   top: 0;
   left: 100%;
+  width: 75%;
   padding: 20px 30px;
   border-bottom: 3px solid var(--primary-color);
   background-color: white;
-  -webkit-animation: expand-width3 0.4s;
-          animation: expand-width3 0.4s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-animation: scale-ltr .4s;
+          animation: scale-ltr .4s;
   display: none;
 }
 
-@-webkit-keyframes expand-width {
+@-webkit-keyframes scale-ltr {
   from {
-    width: 140%;
+    -webkit-transform: scaleX(0.7);
+            transform: scaleX(0.7);
   }
   to {
-    width: 196%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
 }
 
-@keyframes expand-width {
+@keyframes scale-ltr {
   from {
-    width: 140%;
+    -webkit-transform: scaleX(0.7);
+            transform: scaleX(0.7);
   }
   to {
-    width: 196%;
-  }
-}
-
-@-webkit-keyframes expand-width2 {
-  from {
-    width: 140%;
-  }
-  to {
-    width: 155%;
-  }
-}
-
-@keyframes expand-width2 {
-  from {
-    width: 140%;
-  }
-  to {
-    width: 155%;
-  }
-}
-
-@-webkit-keyframes expand-width3 {
-  from {
-    width: 70%;
-  }
-  to {
-    width: 79%;
-  }
-}
-
-@keyframes expand-width3 {
-  from {
-    width: 70%;
-  }
-  to {
-    width: 79%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
 }
 
