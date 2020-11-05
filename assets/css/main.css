@@ -83,7 +83,7 @@
   position: absolute;
   top: 100%;
   right: 0;
-  z-index: 2;
+  z-index: 4;
   width: 190px;
   background-color: white;
   padding: 10px 20px;
@@ -164,7 +164,7 @@ header .header__search-btn .dropdown-menu {
   position: absolute;
   top: 75%;
   left: -1px;
-  z-index: 1;
+  z-index: 4;
   width: 131%;
   height: 80vh;
   overflow-y: scroll;
@@ -241,7 +241,7 @@ header .header__search-form .header__suggest {
   top: 100%;
   width: 100%;
   background-color: white;
-  z-index: 1;
+  z-index: 4;
   padding: 20px;
   border: 1px solid #c3c3c3;
   margin: 0;
@@ -353,7 +353,7 @@ header .header__cart {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  z-index: 1;
+  z-index: 3;
   width: 145px;
   height: 40px;
   margin-left: auto;
@@ -546,7 +546,7 @@ header .header__cart-dropdown .header__cart-list--empty p {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 2;
 }
 
 .boss_header .nav-main {
@@ -592,7 +592,7 @@ header .header__cart-dropdown .header__cart-list--empty p {
   background-color: #f8f8f8;
   -webkit-box-shadow: 0 0 2px #E3E3E3;
           box-shadow: 0 0 2px #E3E3E3;
-  z-index: 1;
+  z-index: 2;
   display: none;
 }
 
@@ -668,7 +668,7 @@ header .header__cart-dropdown .header__cart-list--empty p {
   top: 0;
   left: 100%;
   width: 75%;
-  z-index: 1;
+  z-index: 2;
   -webkit-box-shadow: 0 0 2px #E3E3E3;
           box-shadow: 0 0 2px #E3E3E3;
   padding: 20px 30px;
@@ -934,7 +934,7 @@ header .header__cart-dropdown .header__cart-list--empty p {
   position: absolute;
   top: -15px;
   left: 100%;
-  z-index: 1;
+  z-index: 2;
   display: none;
   -webkit-transform-origin: left;
           transform-origin: left;
@@ -1002,7 +1002,7 @@ header .header__cart-dropdown .header__cart-list--empty p {
   border-bottom: 3px solid var(--primary-color);
   -webkit-box-shadow: 0 0 2px #E3E3E3;
           box-shadow: 0 0 2px #E3E3E3;
-  z-index: 1;
+  z-index: 2;
   background-color: white;
   -webkit-transform-origin: top;
           transform-origin: top;
@@ -1164,6 +1164,7 @@ header .header__cart-dropdown .header__cart-list--empty p {
 
 .banner-with-sales .banner a .banner-inner img {
   position: absolute;
+  max-width: 100%;
 }
 
 .banner-with-sales .banner a .banner-inner__info {
@@ -1183,6 +1184,7 @@ header .header__cart-dropdown .header__cart-list--empty p {
   -webkit-animation: slide-down forwards 0.4s;
           animation: slide-down forwards 0.4s;
   opacity: 0;
+  margin: 17px 0;
 }
 
 .banner-with-sales .banner a .banner-inner__info h2 {
@@ -1195,6 +1197,7 @@ header .header__cart-dropdown .header__cart-list--empty p {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
   opacity: 0;
+  margin: 41px 0;
 }
 
 .banner-with-sales .banner a .banner-inner__info button {
@@ -1239,5 +1242,73 @@ header .header__cart-dropdown .header__cart-list--empty p {
             transform: translateY(0);
     opacity: 1;
   }
+}
+
+.banner-with-sales .block-sales {
+  margin-left: auto;
+}
+
+.banner-with-sales .block-sales .block-item {
+  width: 270px;
+}
+
+.banner-with-sales .block-sales .block-item a .block-item__inner {
+  position: relative;
+}
+
+.banner-with-sales .block-sales .block-item a .block-item__inner img {
+  max-width: 100%;
+}
+
+.banner-with-sales .block-sales .block-item a .block-item__inner .block-item__info {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 80%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.banner-with-sales .block-sales .block-item a .block-item__inner .block-item__info span {
+  display: block;
+}
+
+.banner-with-sales .block-sales .block-item a .block-item__inner .block-item__info span .star-big {
+  font-size: 20px;
+}
+
+.banner-with-sales .block-sales .block-item a .block-item__inner .block-item__info h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #fff;
+}
+
+.banner-with-sales .block-sales .block-item a .block-item__inner .block-item__info h4 {
+  font-size: 16px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.banner-with-sales .block-sales .block-item a .block-item__inner .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 94%;
+  opacity: 0;
+  background-color: #5c4d40;
+}
+
+.banner-with-sales .block-sales .block-item a:hover .layer {
+  opacity: 0.6;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 /*# sourceMappingURL=main.css.map */
