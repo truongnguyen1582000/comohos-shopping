@@ -543,6 +543,10 @@ header .header__cart-dropdown .header__cart-list--empty p {
 
 .boss_header {
   background-color: #343434;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
 .boss_header .nav-main {
@@ -1143,5 +1147,97 @@ header .header__cart-dropdown .header__cart-list--empty p {
   font-size: 1.4rem;
   margin: 0;
   color: #666666;
+}
+
+.banner-with-sales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 200px;
+}
+
+.banner-with-sales .banner a .banner-inner {
+  width: 869px;
+  height: 458px;
+  position: relative;
+}
+
+.banner-with-sales .banner a .banner-inner img {
+  position: absolute;
+}
+
+.banner-with-sales .banner a .banner-inner__info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.banner-with-sales .banner a .banner-inner__info h3 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 4px;
+  -webkit-animation: slide-down forwards 0.4s;
+          animation: slide-down forwards 0.4s;
+  opacity: 0;
+}
+
+.banner-with-sales .banner a .banner-inner__info h2 {
+  color: white;
+  font-size: 50px;
+  font-weight: 100;
+  font-family: cursive;
+  -webkit-animation: slide-down forwards 0.4s;
+          animation: slide-down forwards 0.4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.banner-with-sales .banner a .banner-inner__info button {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 15px 25px;
+  color: white;
+  outline: none;
+  -webkit-animation: slide-down forwards 0.4s;
+          animation: slide-down forwards 0.4s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.banner-with-sales .banner a .banner-inner__info button:hover {
+  background-color: var(--primary-color);
+}
+
+@-webkit-keyframes slide-down {
+  from {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

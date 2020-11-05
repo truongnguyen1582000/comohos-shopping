@@ -558,6 +558,9 @@ header {
 
 .boss_header {
     background-color: #343434;
+    position: sticky;
+    top: 0;
+    z-index: 99;
 
     .nav-main {
         display: flex;
@@ -1115,6 +1118,82 @@ header {
                 font-size: 1.4rem;
                 margin: 0;
                 color: #666666;
+            }
+        }
+    }
+}
+
+.banner-with-sales {
+    display: flex;
+    padding-bottom: 200px;
+
+    .banner {
+        a {
+
+            .banner-inner {
+            width: 869px;
+            height: 458px;
+            position: relative;
+
+                img {
+                    position: absolute;
+                }
+
+                &__info {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+
+                    text-align: center;
+
+                    transform: translate(-50%, -50%);
+
+                    h3 {
+                        font-size: 1.7rem;
+                        text-transform: uppercase;
+                        color: white;
+                        letter-spacing: 4px;
+                        animation: slide-down forwards 0.4s;
+                        opacity: 0;                        
+                    }
+
+                    h2 {
+                        color: white;
+                        font-size: 50px;
+                        font-weight: 100;
+                        font-family: cursive;
+                        animation: slide-down forwards 0.4s;
+                        animation-delay: 0.4s;
+                        opacity: 0;                        
+                    }
+
+                    button {
+                        background-color: transparent;
+                        border: 1px solid white;
+                        padding: 15px 25px;
+                        color: white;
+                        outline: none;
+                        animation: slide-down forwards 0.4s;
+                        animation-delay: 0.8s;
+                        opacity: 0;     
+                        cursor: pointer;
+                        
+                        &:hover {
+                            background-color: var(--primary-color)
+                        }
+                    }
+
+                    @keyframes slide-down {
+                        from {
+                            transform: translateY(-200%);
+                            opacity: 0;
+                        }
+                        to {
+                            transform: translateY(0);
+                            opacity: 1;
+                        }
+                    }
+                }
             }
         }
     }
