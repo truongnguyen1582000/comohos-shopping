@@ -1264,7 +1264,7 @@ header .header__cart-dropdown .header__cart-list--empty p {
   position: absolute;
   top: 60%;
   left: 50%;
-  width: 80%;
+  width: 90%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
@@ -1310,5 +1310,36 @@ header .header__cart-dropdown .header__cart-list--empty p {
   opacity: 0.6;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.banner-with-sales .block-sales .block2 a .block-item__inner .block-item__info h3, .banner-with-sales .block-sales .block2 a .block-item__inner .block-item__info h1 {
+  text-align: left;
+}
+
+.banner-with-sales .block-sales .block2 a .block-item__inner .block-item__info h1 {
+  border-bottom: none;
+}
+
+.banner-with-sales .block-sales .block2 a .block-item__inner .block-item__info h3 {
+  font-size: 1.6rem;
+  margin-left: 14px;
+  text-transform: uppercase;
+}
+
+.banner-with-sales .block-sales .block3 a .block-item__inner .block-item__info p:first-child {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.banner-with-sales .block-sales .block3 a .block-item__inner .block-item__info p:first-child strong {
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.banner-with-sales .block-sales .block3 a .block-item__inner .block-item__info h1 {
+  padding: 10px 0;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
 }
 /*# sourceMappingURL=main.css.map */
