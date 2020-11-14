@@ -13,7 +13,6 @@
         height: 38px;
 
         &__contact {
-            
             &-link {
                 font-size: 1.2rem;
                 color: var(--nav-text-color);
@@ -130,6 +129,8 @@ header {
     .header {
         display: flex;
         align-items: center;
+
+        
 
         height: 121px;
 
@@ -283,6 +284,8 @@ header {
                             .header__suggest-item-price {
                                 font-size: 20px;
                                 font-weight: bold;
+
+                                font-family: "Quicksand";
 
                                 margin-top: 10px;
                                 cursor: default;
@@ -451,6 +454,7 @@ header {
 
                             &-detail {
                                 margin-left: 20px;
+                                margin-top: 20px;
 
                                 .item-name {
                                     color: #3b3c48;
@@ -472,6 +476,7 @@ header {
                                     color: #666;
                                     text-align: left;
                                     margin: 0;
+                                    line-height: 20px;
 
                                     font-size: 1.19rem;
                                 }
@@ -479,6 +484,9 @@ header {
                                 .quantity-and-price {
                                     color: #666;
                                     font-size: 1.5rem;
+
+                                font-family: "Quicksand";
+
 
                                     text-align: left;
 
@@ -510,6 +518,8 @@ header {
                             .text-right {
                                 font-size: 2rem; 
                                 font-weight: 700;
+
+                                font-family: "Quicksand";
                             }
 
                             td {
@@ -974,9 +984,10 @@ header {
                         }
                     }
 
-                    p {
+                    .price {
                         font-size: 20px;
                         font-weight: bold;
+                        font-family: "Quicksand";
                         margin: 0;
                     }
                 }
@@ -1343,6 +1354,7 @@ header {
 
 .category-with-product {
     display: flex;
+    margin-bottom: 200px;
 
     .left {
 
@@ -1374,6 +1386,10 @@ header {
                 &-item {
                     padding: 10px 18px 13px;
                     border-bottom: 1px solid #ededed;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
         
                     a {
                         font-size: 1.3rem;
@@ -1405,6 +1421,7 @@ header {
     .right {
         width:100%;
         margin-left: 30px;
+
         .title-with-button {
             display: flex;
             justify-content: space-between;
@@ -1438,6 +1455,263 @@ header {
                 }
             }
         }
+
+        .product {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+
+            &-item {
+                position: relative;
+                
+                width: 267px;
+                padding-bottom: 25px;
+
+                box-shadow: 0 0 2px #E3E3E3;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width:1px;
+                    height: 100%;
+                    // background-color:red;
+                }
+
+                a {
+                    display: inline-block;
+                    padding: 10px 10px 0;
+                    
+                    .product-item__img {
+                        position: relative;
+
+                        img {
+                            max-width: 100%;
+                        }
+
+                        .selections {
+                            position: absolute;
+                            bottom: 4%;
+                            background-color: #fff;
+
+                            display: flex;
+                            align-items: center;
+
+                            width: 100%;
+                            height: 40px;
+                            box-shadow: 0 0 1px #E3E3E3;
+
+                            overflow: hidden;
+
+                            display: none;
+
+                            @keyframes move-rtl {
+                                from {
+                                    transform: translateX(100px); 
+                                }
+                                to {
+                                    transform: translateX(0);
+                                }
+                            }
+                            
+                            button {
+                                border: none;
+                                outline: none;
+
+                                color: #bebebe;
+                                background-color: #fff;
+
+                                display: flex;
+                                align-items: center;
+
+                                height: 100%;
+
+                                padding: 0 10px;
+                                border-left: 1px solid #ededed;
+
+                                transition: 0.4s;
+
+
+                                animation: move-rtl 0.4s forwards;
+
+                                &:first-child {
+                                    flex: 1;
+                                    display: flex;
+                                    justify-content: center;
+                                    
+                                    animation: move-rtl 0.4s;
+                                    border-left: none;
+
+
+                                    i {
+                                        transform: translateY(-2px);
+                                        margin-right: 6px;
+                                    }
+                                }
+
+                                span {
+                                    font-size: 1rem;
+                                    text-transform: uppercase;
+                                }
+                                
+                                i {
+                                    margin-right: 4px;
+
+                                    font-size: 1.3rem;
+                                }
+
+                                &:hover i{
+                                    color: white;
+                                }
+
+                                &:hover {
+                                    background-color: var(--primary-color);
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover a .selections{
+                    display: flex;
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                &__title {
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                    color: #3c3b48;
+
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                } 
+
+                &__rate {
+                    text-align: center;
+                    margin-bottom: 10px;
+                    i {
+                        color: var(--primary-color);
+                    }
+                }
+
+                &__price {
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: bold;
+
+                    font-family: "Quicksand";
+                }
+            }
+        }
     }
 }
 
+.product-category {
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: 2.4rem;
+            font-family: "Quicksand";
+
+            color: #666;
+        }
+
+        .button {
+            display: flex;
+            a {
+                padding: 1px 11px 0 11px;
+                margin-left: 10px;
+                border: 1px solid #333;
+                border-radius: 60px;
+                i {
+
+                }
+
+                &:hover {
+                    background-color: var(--primary-color);
+                }
+
+                &:hover i{
+                    color: white;
+                }
+            }
+        }
+    }
+
+    &-list {
+        display: flex;
+        margin-top: 20px;
+
+        &__banner {
+            position: relative;
+            
+            width: 370px;
+            height: 334px;
+
+            overflow: hidden;
+
+            a {
+
+                .banner__img {
+                    max-width: 100%;
+                    transition: 0.2s linear;
+                }
+
+            }
+                    &:hover .banner__img{
+                        transform: scale(1.1);
+                    }
+
+            .content {
+                position: absolute;
+                top: 75%;
+                left: 50%;
+                
+                width: 100%;
+
+                text-align: center;
+
+                transform: translate(-50%, -50%);
+
+                h1 {
+                    font-size: 3rem;
+                    color: white;
+                    font-family: "Baskerville Old Face", sans-serif;
+                }
+
+                p {
+                    font-size: 20px;
+                    font-style: italic;
+                    color: white;
+                    margin: 10px auto 15px;
+                }
+
+                .shop-now-btn {
+                    padding: 10px 20px;
+                    background-color: var(--primary-color);
+                    border: 1px solid var(--primary-color);
+                    color: white;
+                    text-transform: uppercase;
+                    transition: 0.2s;
+
+                    &:hover {
+                        color: var(--primary-color);
+                        background-color:transparent;
+                    }
+                }
+            }
+        }
+
+       
+    }
+}
